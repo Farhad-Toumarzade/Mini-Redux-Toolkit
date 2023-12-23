@@ -25,7 +25,7 @@ const userSlice = createSlice({
   name: "user",
   initialState,
   extraReducers: {
-    [getAsyncUsers.pending]: (state, action) => {
+    [getAsyncUsers.pending]: (state) => {
       state.loading = true;
       state.data = [];
       state.error = "";
